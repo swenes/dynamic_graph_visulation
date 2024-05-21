@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizasyon Şeması</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="../css/information.css">
+    <link rel="stylesheet" href="../css/fullscreen.css">
+    <link rel="stylesheet" href="../css/jsontoexcel.css">
+    <link rel="stylesheet" href="../css/operations_button.css">
+    <link rel="stylesheet" href="../css/crud_message.css">
+    <link rel="stylesheet" href="../css/edit_form.css">
+    <link rel="stylesheet" href="../css/delete_form.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sol Şirketler -->
+        <div class="gptw-container">
+            <img src="../assets/wallpaper/gptw2.png" alt="GPTW" class="gptw-logo">
+        </div>
+        <div class="graph-container">
+            <img src="../assets/graph.png" alt="graph" class="graph-logo">
+        </div>
+        <div class="graph-container2">
+            <img src="../assets/graph.png" alt="graph" class="graph-logo2">
+        </div>
+        <div class="graph-container3">
+            <img src="../assets/graph.png" alt="graph" class="graph-logo3">
+        </div>
+        <div class="neworld-container">
+            <img src="../assets/wallpaper/neworld.jpg" alt="neworld" class="neworld-logo">
+        </div>
+        <!-- Organizasyon şeması -->
+        <div id="organizationChart" class="chart-container">
+            <!-- D3.js ile oluşturulacak organizasyon şeması buraya gelecek -->
+        </div>
+
+        <!-- Full Screen Button -->
+        <div class="fullscreen-container">
+            <button class="fullscreen-button" onclick="toggleFullscreen()">Tam Ekran</button>
+            <p class="description">Logo Yazılım ile 1-0 öne geçin</p>
+        </div>
+        <div class="container">
+            <!-- Ana Buton (OPERATIONS) -->
+            <div class="button-wrapper">
+                <button class="main-button">
+                    <img src="../assets/operations.png" alt="Operation Icon">
+                </button>
+                                
+                <!-- Ek Butonlar (Edit, Delete, Download) -->
+                <div class="extra-buttons">
+                    <button id="deleteButton" title="Düğüm Sil">
+                        <img src="../assets/delete.png" alt="Delete Icon">
+                    </button>
+                    <button id="editButton" title="Düğüm Düzenle">
+                        <img src="../assets/edit.png" alt="Edit Icon">
+                    </button>
+                    <button onclick="downloadExcel()" title="Verileri İndir">
+                        <img src="../assets/download.png" alt="Download Icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Silme ve Düzenleme Modu Mesajı -->
+        <div 
+        id="crudModeMessage" class="message" style="visibility: hidden;">
+        </div>
+        <div 
+        id="crudModeImage" class="crudimage" style="visibility: hidden;">
+        </div>
+
+        <div class="overlay" id="confirmationOverlay">
+            <div class="confirmationBox">
+                <p class="confirmationMessage">Bu düğümü silmek istediğinizden emin misiniz?</p>
+                <div class="confirmationButtons">
+                    <button class="confirmButton" id="confirmButtonID">Evet</button>
+                    <button class="cancelButton" id="cancelButtonID">Hayır</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Düzenleme Formu -->
+        <div class="editOverlay" id="editConfirmationOverlay">
+            <div class="editConfirmationBox">
+                <p class="editConfirmationMessage">Bu düğümü güncellemek istediğinizden emin misiniz?</p>
+                <div class="editConfirmationButtons">
+                    <button class="editConfirmButton" id="editConfirmButtonID">Güncelle</button>
+                    <button class="editCancelButton" id="editCancelButtonID">İptal Et</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+        <!-- Koç Logosu -->
+        <img src="../assets/wallpaper/logo2.png" alt="Logo Logo" class="logo-logo">
+        
+
+        <div class="container">
+            <!-- Düğüm ekleme formu -->
+            <div id="organizationForm" class="popup-container">
+                <div class="popup-button" onclick="toggleForm()">
+                    <img src="../assets/addbutton.png" alt="Add Icon">
+                </div>
+                <div class="popup-form" id="popupForm">
+                    <!-- Form içeriği buraya gelecek -->
+                    <!-- form.html dosyasının içeriği buraya eklenecek -->
+                </div>
+            </div>
+            
+        </div>
+    
+    </div>
+
+    <script src="https://d3js.org/d3-zoom.v3.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+    <script src="../js/graph.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="../js/information.js"></script>
+    <script src="../js/fullscreen.js"></script>
+    <script src="../js/jsontoexcel.js"></script>
+</body>
+</html>

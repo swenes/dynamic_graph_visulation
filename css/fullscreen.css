@@ -1,0 +1,33 @@
+.fullscreen-button {
+  position: absolute; /* Mutlak pozisyon */
+  top: 3% ; /* Üstten mesafe */
+  right: -2%;
+  transform: translate(-50%, -50%); /* Orta konumlandırma */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.fullscreen-button:hover {
+ background-color:#ffffff;
+  color: black;
+ transition:  0.3s ease;  }
+
+.fullscreen-container {
+  text-align: center;
+}
+
+.description {
+  position: absolute;
+  bottom: 2%; /* Butonun altına yerleştir */
+  left: 50%; /* Ortaya yerleştir */
+  transform: translateX(-50%);
+  font-size: 38px;
+  color: #ffffff9e;
+  font-weight: bold;
+  font-style: italic; /* İtalik stil ekle */
+}

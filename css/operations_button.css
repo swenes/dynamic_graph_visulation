@@ -1,0 +1,91 @@
+.button-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.main-button {
+    padding:20px;
+    margin: 20px;
+    background-color: #ffffff8a;
+    border: none;
+    position: relative;
+    border-radius:30px;
+
+}
+
+.main-button:hover {
+    background-color: #a7c4e782;
+    border-radius:50px;
+    transition:  0.5s ease;
+
+}
+
+.main-button img {
+    width: 50px;
+    height: 50px;
+}
+
+.extra-buttons {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.extra-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #fff; /* İnce beyaz çizgi */
+    border-radius: 20px; /* Yuvarlak köşeler */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+}
+
+.extra-buttons button img {
+    width: 20px; /* Görsel genişliğini ayarlıyoruz */
+    height: 20px; /* Görsel yüksekliğini ayarlıyoruz */
+}
+
+.extra-buttons button:nth-child(1) {  /*delete button*/
+    left: 130px; /* Sol çapraz buton */
+    top: -90px;
+}
+
+.extra-buttons button:nth-child(2) { /*edit button*/
+    left: 130px; /* Orta üst buton */
+}
+
+.extra-buttons button:nth-child(3) {  /*download button*/
+    left: 25px; /* Sağ çapraz buton */
+
+}
+
+.button-wrapper:hover .extra-buttons {
+    opacity: 5;
+}
+
+
+.extra-buttons button:hover {
+    background-color: rgb(255 255 255); /* Hover rengi (hafif beyaz arka plan) */
+}
+
+.extra-buttons button:hover::before {
+    content: attr(title);
+    position: absolute;
+    top: -30px; /* Metnin yukarıdaki mesafesi */
+    left: 50%; /* Metnin yatayda merkezlenmesi */
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.extra-buttons button:hover::before {
+    opacity: 1;
+}

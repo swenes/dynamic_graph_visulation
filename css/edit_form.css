@@ -1,0 +1,105 @@
+/* Edit Overlay */
+.editOverlay {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Arka plan rengi ve opaklık */
+    display: flex;
+    z-index: 9999; /* Üstte olacak şekilde z-index */
+}
+
+/* Edit Confirmation Box */
+.editConfirmationBox {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Edit Confirmation Message */
+.editConfirmationMessage {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Edit Content (Label ve Input) */
+.editContent {
+    display: grid;
+}
+
+/* Label Stili */
+.editContent label {
+    font-weight: bold;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 4px;
+    display: flex;
+}
+
+/* Input Stili */
+.editContent input,
+.editContent select {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Padding dahil genişlik hesabı */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 12px; /* Alt kenar boşluğu */
+}
+
+/* Edit Confirmation Buttons */
+.editConfirmationButtons {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Edit Confirm Button */
+.editConfirmButton,
+.editCancelButton {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Edit Confirm Button Style */
+.editConfirmButton {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Edit Cancel Button Style */
+.editCancelButton {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Hover Effects for Buttons */
+.editConfirmButton:hover,
+.editCancelButton:hover {
+    opacity: 0.8;
+}
+
+.form-wrapper {
+    display: flex;
+}
+
+.left-column,
+.right-column {
+    width: 50%;
+    padding: 0 10px; /* İsteğe bağlı iç kenar boşluğu */
+    box-sizing: border-box;
+}

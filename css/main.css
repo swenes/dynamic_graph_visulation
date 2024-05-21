@@ -1,0 +1,116 @@
+/* Popup container = düğüm ekleme formunun tamamı*/
+.popup-container {
+  position: fixed; /* Popup container'ın sabit bir konumda kalmasını sağlar */
+  top: 95%; /* Sayfanın en üstünden itibaren popup container'ın yukarıdan olan konumunu belirler */
+  right: 1%; /* Sayfanın sağ kenarına olan mesafeyi belirler */
+  transform: translateY(-100%); /* Popup container'ı yukarıdan aşağıya taşır, başlangıçta görünmemesini sağlar */
+  background-color: #3f101096; /* Popup container'ın arka plan rengini belirler */
+  border-radius: 5px 0 0 5px; /* Popup container'ın köşelerine yuvarlaklık ekler */
+  overflow: hidden; /* İçerik taşmalarını engeller */
+  border-radius: 2%;
+  padding: 10px; 
+  transition: border-radius 0.3s ease; /* Köşe yumuşatma animasyonu için geçiş efekti */
+
+}
+
+/* Popup button */
+.popup-button {
+  cursor: pointer; /* Fare işaretçisinin üzerine geldiğinde el işareti görünmesini sağlar */
+  padding: 20px; /* Popup düğmesinin içeriğinin içeriden dışarıya olan boşluğunu belirler */
+  border-radius: 0 5px 5px 0; /* Popup düğmesinin köşelerine yuvarlaklık ekler */
+  transition: background-color 0.9s ease; /* Düğmenin arka plan rengindeki değişimlerin animasyonlu olmasını sağlar */
+}
+
+.popup-button img {
+  width: 40px; /* Düğme içindeki görselin genişliğini belirler */
+  height: 40px; /* Düğme içindeki görselin yüksekliğini belirler */
+}
+
+/* Popup form = add butonuna tıklandığında açılan tarafın içi = form yani*/
+.popup-form {
+  display: none;
+  padding: 20px;
+  width: 270px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: auto;
+  transition: height 0.5s ease;
+  max-height: 950px;
+}
+
+.popup-form input[type="date"] {
+  width: calc(100% - 24px);
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.popup-form.active {
+  display: block;
+  height: auto; /* Formun açılma animasyonu için boyutunu içeriğine göre ayarlar */
+}
+/* Form başlığı */
+.popup-form h2 {
+  margin-top: 0; /* Başlık ile formun üst kısmı arasındaki boşluğu kaldırır */
+  margin-bottom: 20px; /* Başlık ile form içeriği arasındaki boşluğu belirler */
+  font-size: 24px; /* Başlık font boyutu */
+  color: #333; /* Başlık yazı rengi */
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center; /* Başlığı ortala */
+}
+
+
+/* Form etiketleri */
+.popup-form label {
+  display: block; /* Etiketleri blok element olarak görüntüler */
+  margin-bottom: 10px; /* Etiketler arasındaki boşluğu belirler */
+  font-weight: bold; /* Etiketlerin kalın yazılmasını sağlar */
+  color: #555; /* Etiketlerin yazı rengi */
+}
+
+/* Form giriş alanları */
+.popup-form input[type="text"],
+.popup-form select {
+  width: calc(100% - 24px); /* Genişlik hesabı: %100 - (padding * 2) - (border * 2) */
+  padding: 8px; /* Giriş alanlarının içeriğinin içeriden dışarıya olan boşluğunu belirler */
+  margin-bottom: 15px; /* Giriş alanları arasındaki boşluğu belirler */
+  border: 1px solid #ddd; /* Giriş alanlarının kenarlık rengini belirler */
+  border-radius: 5px; /* Giriş alanlarının köşelerine yuvarlaklık ekler */
+}
+
+/* Form düğmeleri */
+.popup-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3f101096;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.popup-form button:hover {
+  background-color: #089026c2;
+}
+
+.popup-container:hover {
+  border-radius: 30px; /* Hover durumunda köşeleri daha yuvarlak hale getirir */
+
+}
+
+/* svg nin etrafına çizgi çekiyorum*/ 
+.chart-container {
+  height: 620px;
+  width: 850px;
+  border: 7px solid rgb(185, 1, 1); /* Siyah renkte 1 piksel kalınlığında bir çizgi */
+  border-radius: 3%;
+  background-color: rgb(216 216 216 / 95%); /* Arka plan rengi beyaz */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}

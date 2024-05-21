@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "json": "^11.0.0",
+    "json-server": "^1.0.0-alpha.23",
+    "json2xls": "^0.1.2",
+    "server": "^1.0.39",
+    "xlsx": "^0.18.5"
+  }
+}

@@ -1,0 +1,88 @@
+.popup {
+    position: fixed;
+    bottom: 5%;
+    left: 1%;
+    width: 350;
+    background-color: #3f101096;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif; 
+    color: white;
+}
+
+.popup h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    text-align: center; /* Başlığı ortala */
+    color: rgb(255, 255, 255); /* Kırmızı renk */
+}
+
+
+.popup img {
+    display: block;
+    margin: 0 auto; /* Fotoğrafı ortalayın */
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 50%; /* Yuvarlak köşeler için */
+}
+
+.popup .highlight {
+    color: rgb(218 14 14); /* Kırmızı renk */
+}
+
+.popup:hover {
+    background-color: #300c0c96;
+    cursor: pointer;
+}
+
+
+.popup2 {
+    position: fixed;
+    bottom: 2%;
+    left: 1%;
+    width: 350;
+    background-color: #3f101096;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif; 
+    color: white;
+}
+
+.popup2 h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    text-align: center; /* Başlığı ortala */
+    color: rgb(255, 255, 255); /* Kırmızı renk */
+}
+
+
+.popup2 img {
+    display: block;
+    margin: 0 auto; /* Fotoğrafı ortalayın */
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 50%; /* Yuvarlak köşeler için */
+}
+
+.popup2 .highlight {
+    color: rgb(218 14 14); /* Kırmızı renk */
+}
+
+.popup2:hover {
+    background-color: #300c0c96;
+    cursor: pointer;
+}

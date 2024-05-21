@@ -1,0 +1,25 @@
+.excel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jsontoexcel-button {
+    position: fixed;
+    top: 3%;
+    left: 2%;
+    padding: 10px 20px;
+    background-color: #3f101096;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.jsontoexcel-button:hover {
+     background-color: #01ff38c2;
+     color: black
+}
+

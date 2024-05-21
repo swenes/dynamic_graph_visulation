@@ -1,0 +1,97 @@
+body {
+  background-image: url("../assets/back3.jpg");
+  background-repeat: no-repeat; 
+} 
+
+
+/* İlk tekrar */
+.graph-logo {
+  width: 150px; /* Maksimum genişlik */
+}
+
+.graph-container {
+  display: flex;
+  position: fixed;
+  right: 20%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Elementin kendi boyutunun yarısını geri çekme */
+}
+
+/* İkinci tekrar */
+.graph-logo2 {
+  width: 150px; /* Maksimum genişlik */
+}
+
+.graph-container2 {
+  display: flex;
+  position: fixed;
+  left: 28%;
+  top: 30%;
+  transform: translate(-50%, -50%); /* Elementin kendi boyutunun yarısını geri çekme */
+}
+
+/* Üçüncü tekrar */
+.graph-logo3 {
+  width: 150px; /* Maksimum genişlik */
+}
+
+.graph-container3 {
+  display: flex;
+  position: fixed;
+  left: 29%;
+  top: 70%;
+  transform: translate(-50%, -50%) rotate(-90deg); /* -90 derece döndürme */
+}
+
+.gptw-logo {
+  width: 150px; /* Maksimum genişlik */
+}
+
+
+
+.gptw-container {
+  display: flex;
+  position: fixed;
+  right: 15%;
+  top: 30%;
+  transform: translate(-50%, -50%); /* Elementin kendi boyutunun yarısını geri çekme */
+}
+
+
+.neworld-logo {
+  width: 850px; /* Maksimum genişlik */
+  height:630px;
+  border-radius:20px;
+}
+
+
+
+.neworld-container {
+  display: flex;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Elementin kendi boyutunun yarısını geri çekme */
+}
+
+
+/* logo logosu */
+.logo-logo {
+  position: absolute; /* Mutlak pozisyon */
+  top: 8% ; /* Üstten mesafe */
+  left: 50%; /* Soldan mesafe */
+  height: 12%; /* Yükseklik */
+  transform: translate(-50%, -50%); /* Orta konumlandırma */
+  z-index: 1; /* Koç logonun diğer şirket logolarının üzerinde olmasını sağlar */
+}
+.edit-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 18px;
+  visibility: hidden; /* Başlangıçta görünmez */
+}
+
+
