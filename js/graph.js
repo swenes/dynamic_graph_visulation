@@ -106,7 +106,6 @@ Promise.all([
         "İnsan Kaynakları": "cyan",
         "Yazılım": "green",
         "Pazarlama": "orange",
-        "Satın Alma": "purple",
     };
 
 

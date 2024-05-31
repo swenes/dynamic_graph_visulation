@@ -217,7 +217,9 @@ Promise.all([
             if (d.type === "workers") {
                 form = `
                 <h2>Çalışan Detayları</h2>
-                <img src="${d.profile_picture}" alt="Profil Resmi">
+                <div class="image-container" style="width: 128px; height: 128px; overflow: hidden; position: relative; padding-left:75px;">
+                <img src="${d.profile_picture}" alt="Profil Resmi" style="position: relative; top: 40%; left: 50%; transform: translate(-50%, -50%); max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
                 <p><strong>Adı Soyadı:</strong> ${d.name}</p>
                 <p><strong>Sicil Numarası:</strong> ${d.sicil}</p>
                 <p><strong>Üniversite:</strong> ${d.university}</p>
@@ -234,7 +236,9 @@ Promise.all([
             } else if (d.type === "teamLeads") {
                 form = `
                 <h2>Takım Lideri Detayları</h2>
-                <img src="${d.profile_picture}" alt="Profil Resmi">
+                <div class="image-container" style="width: 128px; height: 128px; overflow: hidden; position: relative; padding-left:75px;">
+                <img src="${d.profile_picture}" alt="Profil Resmi" style="position: relative; top: 40%; left: 50%; transform: translate(-50%, -50%); max-width: 100%; max-height: 100%; object-fit: contain;">
+                </div>
                 <p><strong>Adı Soyadı:</strong> ${d.name}</p>
                 <p><strong>Sicil Numarası:</strong> ${d.sicil}</p>
                 <p><strong>Üniversite:</strong> ${d.university}</p>
@@ -258,7 +262,9 @@ Promise.all([
                 const misyonSatirlar = d.misyon.match(/.{1,40}(\s|$)/g); // 60 karaktere kadar satırı böl
     
                  form = `
-                <img src="${d.logo}" alt="Profil Resmi" style="height:75px; width:80px;">
+                 <div class="image-container" style="padding-left: 60px;width: 140px; height: 140px; overflow: hidden;">
+                 <img src="${d.logo}" alt="Profil Resmi" style="width: 100%; height: 100%; object-fit: contain;">
+             </div>
                 <h2>Şirket Detayları</h2>
                 <p><strong>Şirket Adı:</strong> ${d.name}</p>
                 <p><strong>Kuruluş Tarihi:</strong> ${d.kurulusTarihi}</p>

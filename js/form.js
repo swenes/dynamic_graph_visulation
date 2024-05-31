@@ -365,8 +365,8 @@ async function addNode() {
                 } else {
                     nodesData.types.employee.workers.push(newNode);
                     newLink = {
-                        "source": newNode.id,
-                        "target": nodesData.types.employee.teamLeads.find(data => data.id === selectedTeamLeadID).id,
+                        "source": nodesData.types.employee.teamLeads.find(data => data.id === selectedTeamLeadID).id,
+                        "target": newNode.id
                     };
                 }
                 linksData.push(newLink);
