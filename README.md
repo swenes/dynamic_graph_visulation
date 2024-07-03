@@ -1,4 +1,4 @@
-# Dynamic Graph Visulation with Department Head Prof. Dr. Resul DAŞ 
+# Dynamic Graph Visulation with Prof. Dr. Resul DAŞ 
 ## Department of Software Engineering, Technology Faculty, Firat University
 
 ## ABSTRACT
