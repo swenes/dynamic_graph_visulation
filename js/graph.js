@@ -1246,11 +1246,6 @@ Promise.all([
                 default:
                     break;
             }
-
-
-
-
-
             console.log(`${d.name} güncellendi`);
             editConfirmationOverlay.style.display = 'none'; // Onay kutusunu gizle
         };
@@ -1261,9 +1256,6 @@ Promise.all([
     }
 
 }
-
-
-
 
 );
 function toggleFullscreen() {

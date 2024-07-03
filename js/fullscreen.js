@@ -325,7 +325,7 @@ Promise.all([
             case "workers":
                 // Çalışanlar için parentCompany'i al
                 node = nodesData.types.employee.workers.find(node => node.id === targetID);
-                return node ? node.parentDepartment : null;
+                // return node ? node.parentDepartment : null
             case "teamLeads":
                 // Takım liderleri için parentCompany'i al
                 node = nodesData.types.employee.teamLeads.find(node => node.id === targetID);
