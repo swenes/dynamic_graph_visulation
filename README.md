@@ -5,7 +5,7 @@
 
 This study aims to manage the organizational structure of an anonymous software company more effectively and facilitate access to information through graph visualization. Within the scope of the project, the front end was developed using HTML, CSS, and JavaScript (D3.js), while Node.js technology was used on the back end. The results have provided a clearer and more understandable presentation of the organizational structure of employees and departments. In addition, users have quick access to employee information and organizational structure. This project improves the internal communication and organizational management of companies, increasing productivity and shortening the time to access information. Additionally, employees' departments or team leaders can be changed if desired. In other words, an employee can work on a different project, reporting to a different department or team leader.
 
-## 1- INTRODUCTION
+## 1 - INTRODUCTION
 
 In the dynamic environment of software companies, effective management of organizational structures is critical. The ability to quickly access and understand information about employees and departments can significantly impact productivity and decision-making processes. With the increasing complexity of organizational structures and the rapid pace of change in the tech industry, traditional methods of managing organizational information are often insufficient. This study explores the potential of graph visualization as a tool to enhance the management and accessibility of organizational information.
 
@@ -19,7 +19,7 @@ Traditional databases often struggle with the complexity and relational nature o
 Effective internal communication and streamlined access to organizational information are pivotal in fostering a productive work environment. This project leverages graph visualization to make the organizational structure more transparent and accessible, thereby facilitating better understanding and management of the organization. The approach not only aids in quicker information retrieval but also supports improved decision-making processes, particularly in environments dealing with large datasets.
 
 
-## 2-LITERATURE REVIEW
+## 2 - LITERATURE REVIEW
 Graph visualization has emerged as a powerful tool in various fields, offering innovative solutions for managing complex relational data. In organizational management, traditional methods often rely on static, tabular formats, which can obscure relationships and dependencies within the structure. The shift towards graph-based approaches addresses these limitations by providing a more dynamic and intuitive representation of organizational data.
 
 Numerous studies have highlighted the benefits of graph databases and visualization tools in handling complex data structures. Angles and Gutierrez (2008) emphasize that graph databases excel in scenarios where relationships between data points are intricate and highly interconnected. They argue that the ability to represent these relationships visually allows for more efficient querying and manipulation of data, which is particularly relevant in the context of dynamic organizational structures. Their work lays the foundation for understanding how graph databases can transform data management practices, offering advantages such as faster query performance and more natural data modeling.
@@ -40,7 +40,7 @@ The healthcare industry, with its complex network of providers, patients, and se
 
 Overall, the literature underscores the significant advantages of graph visualization in managing organizational structures. By offering a more flexible, dynamic, and intuitive representation of relational data, graph visualization tools enhance communication, support strategic decision-making, and improve the overall efficiency of organizational management. These findings provide a robust foundation for the exploration and implementation of graph visualization techniques in modern software companies, suggesting a wide range of applications across various industries.
 
-## 3-MATERIALS AND METHODS
+## 3 - MATERIALS AND METHODS
 
 For this project, a comprehensive set of fictitious data was generated to represent the organizational structure of a company. This data included nodes for departments, team leaders, and employees. Each node was designed to reflect the hierarchical and relational aspects of the organizational structure. The data was carefully crafted to mimic real-world scenarios, ensuring that the relationships between entities were logical and meaningful.
 
@@ -105,7 +105,7 @@ The web application was developed using a combination of HTML, CSS, and JavaScri
 - **Preliminary User Experience**: Although there were no actual users, the prototype was reviewed by the project team to identify any obvious usability issues. Feedback from the team was used to make initial improvements to the user interface and overall functionality.
 
 
-## 4-EXPERIMENTAL RESULTS
+## 4 - EXPERIMENTAL RESULTS
 
 The experimental evaluation of the developed graph visualization system was conducted through a comprehensive series of tests, involving both qualitative feedback and quantitative performance metrics. The system is intended to be deployed within the software company, with a diverse group of employees from various departments set to participate in the trials.
 
@@ -117,7 +117,7 @@ Furthermore, the scalability of the system will be tested by progressively incre
 
 In conclusion, the experimental results suggest that the graph visualization system has significant potential to enhance the accessibility, usability, and efficiency of organizational management. It aims to improve the user experience while proving to be a robust and scalable solution for dynamic and growing businesses. The positive preliminary feedback and projected improvements in performance metrics suggest that this tool could serve as a valuable asset for organizations aiming to streamline their internal communications and management processes.
 
-## 5-CONCLUSION
+## 5 - CONCLUSION
 In conclusion, this study has delved into the innovative application of graph visualization to enhance the management and accessibility of organizational structures within software companies. By employing technologies such as D3.js for dynamic visualization and Node.js for backend support, the project has exemplified how modern tools can revolutionize internal communication and decision-making processes. The graphical representation of organizational hierarchies offers a holistic view that traditional tabular formats often lack, allowing stakeholders to intuitively grasp complex relationships and dependencies.
 
 The benefits of graph visualization extend beyond mere representation. They facilitate quicker access to critical information, enable seamless updates to reflect organizational changes, and empower users to navigate through intricate networks with ease. This not only improves operational efficiency but also enhances collaboration and strategic planning capabilities within the organization. Moreover, the interactive features of graph-based systems empower employees to explore and understand the organizational structure autonomously, fostering a culture of transparency and engagement.
@@ -128,5 +128,5 @@ In practical terms, the successful implementation of graph visualization depends
 
 In conclusion, while this study represents a step forward in leveraging visualization for organizational management, ongoing exploration and refinement are essential. By continuing to innovate and adapt these tools to meet evolving business needs, organizations can unlock new potentials in efficiency, collaboration, and strategic foresight.
 
-## 6- Acknowledgments
+## 6 - Acknowledgments
 We would like to extend our sincere gratitude to Logo Yazılım for providing invaluable insights and serving as the exemplary company for our project. Their commitment to innovation and excellence in the field of software development has been instrumental in shaping the direction and outcomes of our work. The support and resources provided by Logo Yazılım have significantly contributed to the success of this project. Thank you for your collaboration and unwavering dedication to advancing technology.
