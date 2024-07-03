@@ -58,10 +58,11 @@ Express, a minimal and flexible Node.js web application framework, was employed 
 Fictional data was meticulously structured in a JSON file to accurately represent organizational relationships. Each node in the JSON file contained various attributes, including ID, name, role, and links to other nodes. This structure allowed data to be represented in a clear and orderly manner, facilitating easy manipulation and visualization. You can also save and view all the data in the JSON file to an Excel file with the download data button on the project.
 
 ![data_flow_dynamic_graph_visulation](https://github.com/swenes/dynamic_graph_visulation/assets/75016140/13b059e9-b593-470d-8774-cf8e88628c5f)  
-Figure 1. Data Flow Diagram
+<p align="center">Figure 1. Data Flow Diagram</p>
 
 ![data_content](https://github.com/swenes/dynamic_graph_visulation/assets/75016140/077f2672-6ff4-44ca-b3e8-d538a4442fec)
-Figure 2. Data Content
+<p align="center">Figure 2. Data Content</p>
+
 
 ### 3.4 Graph Construction
 
@@ -84,10 +85,10 @@ The web application was developed using a combination of HTML, CSS, and JavaScri
 - **JavaScript**: Utilized to handle interactive elements and integrate the D3.js visualizations. JavaScript functions were written to manage user interactions, such as zooming, panning, and node selection.
 
 ![home_page](https://github.com/swenes/dynamic_graph_visulation/assets/75016140/cb2fa80d-bbbc-45d2-b8db-eff4695ec886)
-Figure 3. Home Page Image of the Prototype Version
+<p align="center">Figure 3. Home Page Image of the Prototype Version</p>
 
 ![update_page](https://github.com/swenes/dynamic_graph_visulation/assets/75016140/22207494-458f-4998-8fed-64c7d537af76)
-Figure 4. Node Update Image of Prototype Version
+<p align="center">Figure 4. Node Update Image of Prototype Version</p>
 
 ### 3.5 Server and CRUD Operations
 
